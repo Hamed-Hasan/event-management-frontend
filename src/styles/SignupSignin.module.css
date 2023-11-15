@@ -1,0 +1,97 @@
+.signupBox {
+  height: 100vh;
+}
+.signupLeftContainer {
+  background: url(../assets/signup.jpg) center center;
+  background-size: cover;
+  padding: 120px 40px;
+  height: 100%;
+  color: #edf4ed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.signupRightContainer {
+  padding: 120px 40px;
+  height: 100%;
+}
+
+.signupLeftContainer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.signupLeftContainer h3,
+.signupRightContainer h3 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.signupLeftContainer p {
+  font-size: 20px;
+}
+.signinBox {
+  height: 100vh;
+}
+.signinRightContainer {
+  background: url(../assets/signin.jpg) center center;
+  background-size: cover;
+  padding: 120px 40px;
+  height: 100%;
+  color: #edf4ed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.signinLeftContainer {
+  padding: 120px 40px;
+  height: 100%;
+}
+
+.signinRightContainer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.signinLeftContainer h3,
+.signinRightContainer h3 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.signinLeftContainer p {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 992px) {
+  .signupLeftContainer h3 {
+    font-size: 30px;
+  }
+  .signupLeftContainer p {
+    font-size: 18px;
+  }
+  .signinLeftContainer h3 {
+    font-size: 30px;
+  }
+  .signinLeftContainer p {
+    font-size: 18px;
+  }
+}
